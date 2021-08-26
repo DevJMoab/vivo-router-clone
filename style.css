@@ -1,0 +1,67 @@
+@font-face{
+    font-family: "itc";
+    src: url("./img/officina-serif-itc-book.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: itc,Arial, Helvetica, sans-serif; ;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(102,102,102,0.5);
+    box-shadow: 0 0 1em 0 rgba(102,102,102,0.5);
+    font-size: 10px;
+}
+
+.header .top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 980px;
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin:40px auto;
+}
+
+.side-menu a{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    width: 220px;
+    height: 53px;
+    background-color: #660099;
+    border-bottom: 1px #4f0077 solid;
+    color: #fff;
+    font-size: 18px;
+}
+
+.side-menu span{
+    display: flex;
+    
+}
+
+.side-menu a:hover{
+    background-color: #4f0077;
+}
+
+table th{
+    background-color: #e7ebf3;
+}
+
+table td{
+    background-color: #f9f9f9;
+}
