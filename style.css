@@ -123,10 +123,16 @@ body{
 }
 
 .app-container table .status-line{
-    
+    display: flex;
     float: left;
     margin: 0 10px;
-    padding: 0 0 0 25px;
+    align-items: center;
+}
+
+.app-container table th{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-container table td{
@@ -136,12 +142,15 @@ body{
     position: relative;
 }
 
-.app-container table th{
+.app-container table td i{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #98ce1e;
+    font-size: 15px;
 }
 
+.app-container table td .status-line-box {
+    margin-left: 10px;
+}
 
 
 
