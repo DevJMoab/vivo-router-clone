@@ -28,13 +28,13 @@
         <a href="#" class="set-menu-about"><span><i class="material-icons">keyboard_arrow_right</i></span>Sobre o Dispositivo</a>
     </div>
 
-    <table>
+    <table id="status">
         <tr>
-            <th class="th-status-line"><img src="./img/icon-fiber2.png" alt="GPON"><span>GPON</span></th>
-            <td class="td-status-line">
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>Link:</strong><br>Estabelecido</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>Potência Rx:</strong><br>-20.71 dBm</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>Potência Tx:</strong><br>2.42 dBm</div></div>
+            <th><img src="./img/icon-fiber2.png" alt="GPON"><span>GPON</span></th>
+            <td>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>Link:</strong><br>Estabelecido</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>Potência Rx:</strong><br>-20.71 dBm</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>Potência Tx:</strong><br>2.42 dBm</div></div>
             </td>
             <td><div class="status-line-details"></div></td>
         </tr>
@@ -42,7 +42,7 @@
         <tr>
             <th><img src="./img/icon-internet.png" alt="Internet"><span>Internet</span></th>
             <td>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>PPP:</strong><br>Conectado</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>PPP:</strong><br>Conectado</div></div>
             </td>
             <td><div class="status-line-details"><a href="#"><span>Detalhes</span></a></div></td>
         </tr>
@@ -50,7 +50,7 @@
         <tr>
             <th><img src="./img/wifi-locked2.png" alt="WI-FI 2.4GHz"><span>WI-FI 2.4GHZ</span></th>
             <td>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>SSID:</strong>EletecSolar<br>Desativado</div></div>
+                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>SSID: </strong>EletecSolar<br>Desativado</div></div>
               </td>
               <td><div class="status-line-details"><a href="#"><span>Detalhes</span></a></div></td>
         </tr>
@@ -58,7 +58,7 @@
         <tr>
             <th><img src="./img/wifi-locked2.png" alt="WI-FI 5GHz"><span>WI-FI 5GHZ</span></th>
             <td>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>SSID:</strong>EletecSolar-5G<br>Desativado</div></div>
+                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>SSID: </strong>EletecSolar-5G<br>Desativado</div></div>
               </td>
               <td><div class="status-line-details"><a href="#"><span>Detalhes</span></a></div></td>
         </tr>
@@ -66,10 +66,10 @@
         <tr>
             <th><img src="./img/icon-local.png" alt="Rede Local"><span>Rede Local</span></th>
             <td>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>LAN1:</strong><br>Desconhecido</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>LAN2:</strong><br>MHDX</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>LAN3:</strong><br>ACTIVE-20</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>LAN4:</strong><br>linux-b418538b77d8</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>LAN1:</strong><br>Desconhecido</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>LAN2:</strong><br>MHDX</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>LAN3:</strong><br>ACTIVE-20</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>LAN4:</strong><br>linux-b418538b77d8</div></div>
             </td>
             <td><div class="status-line-details"><a href="#"><span>Detalhes</span></a></div></td>
         </tr>
@@ -85,12 +85,16 @@
         <tr>
             <th><img src="./img/icon-phone.png" alt="Telefone"><span>Telefone</span></th>
             <td>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>Rede:</strong><br>Disponível</div></div>
-                <div class="status-line"><i class="material-icons">fiber_manual_record</i><div class="status-line-box"><strong>Telefone:</strong><br>+557741411317</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>Rede:</strong><br>Disponível</div></div>
+                <div class="status-line active"><i class="material-icons active">fiber_manual_record</i><div class="status-line-box"><strong>Telefone:</strong><br>+557741411317</div></div>
             </td>
             <td><div class="status-line-details"></div></td>
         </tr>
     </table>
 </div>
+<!-- <div class="device">
+    <button type="button" onclick="active()">Teste</button>
+</div> -->
+<script src="./script.js"></script>
 </body>
 </html>

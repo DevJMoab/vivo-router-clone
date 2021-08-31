@@ -68,34 +68,36 @@ body{
 .app-container .side-menu a:hover{
     background-color: #4f0077;
 }
-
-.app-container table{
+/*vvvvvvvvvvvvvv Tabela vvvvvvvvvvvvvvv*/
+.app-container #status{
     margin: 20px;
     max-width: 800px;
 }
-
-.app-container table th{
+/*vvvvvvvvvvvvvv Coluna Esquerda vvvvvvvvvvvvvvv*/
+.app-container #status th{
     position: relative;
-    justify-content: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 190px;
     height: 62px;
     background-color: #e7ebf3;
-}
+}    
 
-.app-container table th img{
+.app-container #status th img{
     position: absolute;
     margin: 0 20px;
     left: 0;
 }
 
-.app-container table th span{
+.app-container #status th span{
     position: absolute;
     left: 50px;
     margin: 0 10px;
     color: #4f0077;
 }
 
-.app-container table td span{
+.app-container #status td span{
     font-size: 12px;
     width: 60px;
     height: 24px;
@@ -105,53 +107,46 @@ body{
     color: #fff;
 }
 
-.app-container table td a{
+.app-container #status td a{
     text-decoration: none;
 }
 
-.app-container table .status-line-details{
+.app-container #status .status-line-details{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90px;
 }
 
-/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+/*vvvvvvvvvvvvvv Coluna Central vvvvvvvvvvvvvvv*/
 
-.app-container table .td-status-line{
-    width: 800px;
-}
-
-.app-container table .status-line{
+.app-container #status .status-line{
     display: flex;
     float: left;
     margin: 0 10px;
     align-items: center;
 }
 
-.app-container table th{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.status-line.active{
+    color: #666666; 
+}
+.app-container #status td i.active{
+    color: #98ce1e;
 }
 
-.app-container table td{
+.app-container #status td{
     background-color: #f9f9f9;
-    color: #666666;
+    color: #CA5151;
     font-size: 12px;
     position: relative;
 }
 
-.app-container table td i{
+.app-container #status td i{
     display: flex;
-    color: #98ce1e;
+    color: #CA5151;
     font-size: 15px;
 }
 
-.app-container table td .status-line-box {
+.app-container #status td .status-line-box {
     margin-left: 10px;
 }
-
-
-
-
